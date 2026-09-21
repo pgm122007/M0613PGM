@@ -1,0 +1,28 @@
+<?php 
+$nom = "Pepito";
+
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tres Formas</title>
+</head>
+<body>
+  <h1>Tres Formas y el mismo resultado</h1>
+  
+  <!-- Forma 1 -->
+  <?php echo "<p>Hola, $nom</p>"; ?>
+
+  <!-- Forma 2: html esta fuera, php solo pone el valor-->
+   <p>Hola <?= $nom?></p>
+
+  <!-- Forma 3 el de toda la vida  -->
+   <p>Hola pepito</p>;
+
+</body>
+</html>
