@@ -1,37 +1,92 @@
-body{
-  margin: 0;
-  height: 92vh;
-  background-color: #ced4da;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
-  text-align: center;
-  background-color: #adb5bd;
-  height: 15vh;
-}
-h1{
-  font-weight: 700;
-  margin: 0;
-}
-main{
-  text-align: left;
-  background-color: #6c757d;
-}
-article{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  text-align: left;
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dfe7ec;
 }
-p{
-  margin: 0;
+
+/* CABECERA */
+header{
+    text-align: center;
+    background-color: #adb5bd;
+    padding: 20px;
 }
+
+header h1{
+    color: #0d3b66;
+    font-size: 3rem;
+}
+
+header p{
+    color: #003566;
+    font-size: 1.2rem;
+}
+
+/* ZONA CENTRAL */
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c757d;
+}
+
+/* TARJETA DEL PRODUCTO */
+article{
+    background-color: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+/* TEXTOS */
+.descripcion{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1d3557;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.preu{
+    color: #198754;
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+.total{
+    color: #dc3545;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.estoc{
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.ref{
+    color: #6c757d;
+    font-style: italic;
+}
+
+article p{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #adb5bd;
-  height: 5vh;
+    background-color: #adb5bd;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
 }
