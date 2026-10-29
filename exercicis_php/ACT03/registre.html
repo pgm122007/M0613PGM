@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BitBazar</title>
+  <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+  <h1>SIGN IN</h1>
+  <form action="processa.php" method="post">
+    <fieldset>
+      <legend>Dades personals</legend>
+
+      <label for="nom">Nom</label>
+      <input type="text" name="nom" id="nom">
+
+      <label for="cognom">Cognom</label>
+      <input type="text" name="cognom" id="cognom">
+
+      <label for="naixement">Data de Naixement</label>
+      <input type="date" name="naixement" id="naixement">
+
+      <label for="tel">Telefon</label>
+      <input type="tel" name="telefon" id="telefon" >
+    </fieldset>
+    <fieldset>
+      <legend>Dades del compte</legend>
+
+      <label for="usuari">Usuari</label>
+      <input type="text" name="usuari" id="usuari">
+
+      <label for="correu">Correu</label>
+      <input type="email" name="correu" id="correu">
+
+      <label for="contrasenya">Contrasenya</label>
+      <input type="password" name="contrasenya" id="contrasenya">
+
+      <label for="confContrasenya">Repetir contrasenya</label>
+      <input type="password" name="confContrasenya" id="confContrasenya">
+    </fieldset>
+    <fieldset>
+      <legend>Adreça</legend>
+
+      <label for="carrer">Carrer i numero</label>
+      <input type="text" name="carrer" id="carrer">
+
+      <label for="poblacio">Poblacio</label>
+      <input type="text" name="poblacio" id="poblacio">
+
+      <label for="codiPostal">Codi postal</label>
+      <input type="text" name="codiPostal" id="codiPostal">
+    </fieldset>
+    <fieldset>
+      <legend>Preferències</legend>
+
+      <label for="tipusClient">Tipus de Client</label>
+      <select name="tipusClient" id="tipusClient">
+        <option value="">Selecciona</option>
+        <option value="particular">Particular</option>
+        <option value="empresa">Empresa</option>
+        <option value="premium">Premium</option>
+      </select>
+      <p class="grup">Com ens has conegut</p>
+      <label class="linia"><input type="radio" name="origen" value="Xarxes">Xarxes socials</label>
+      <label class="linia"><input type="radio" name="origen" value="Amics">Amics</label>
+      <label class="linia"><input type="radio" name="origen" value="Xarxes">Publicitats</label>
+      <br>
+      <br>
+      <label class="linia"><input type="checkbox" name="bulleti" value="si">Rebre ofertes</label>
+      <label class="linia"><input type="checkbox" name="bulleti" value="si">Accepto les codicions</label>
+    </fieldset>
+    <button type="submit">Crear el compte</button>
+  </form>
+</body>
+</html>
