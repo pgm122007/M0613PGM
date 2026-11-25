@@ -1,0 +1,4 @@
+<?php
+echo password_hash('secret123', PASSWORD_DEFAULT) . '<br>';
+echo password_hash('secret123', PASSWORD_DEFAULT);
+?>

@@ -1,0 +1,4 @@
+Aquí van les 3 captures que demana l'entrega:
+1. login.php amb el missatge d'error (contrasenya incorrecta)
+2. privat.php amb el salut amb el teu nom a la capçalera
+3. F12 > Aplicació > Cookies amb PHPSESSID visible, estant dins

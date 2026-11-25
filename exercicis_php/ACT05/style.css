@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; color: #222; }
+header, footer { background: #004578; color: #fff; padding: 1rem 2rem; }
+header h1 { margin: 0; }
+main { max-width: 960px; margin: 0 auto; padding: 1rem 2rem; }
+h2 { border-bottom: 3px solid #f0b92b; padding-bottom: .3rem; color: #004578; }
+.graella { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.targeta { background: #fff; border: 1px solid #dde3ea; border-radius: 8px; padding: 1rem; }
+.targeta h3 { margin-top: 0; }
+.categoria { color: #667; font-size: .85rem; text-transform: capitalize; }
+.preu { font-weight: bold; }
+.estat { display: inline-block; padding: .2rem .6rem; border-radius: 4px; font-size: .85rem; }
+.disponible { background: #d9f2e0; color: #1b6b35; }
+.ultimes { background: #fff0c9; color: #8a6100; }
+.esgotat { background: #f8d7da; color: #8a1c24; }
+.buit { background: #fff0c9; padding: 1rem; border-radius: 6px; }
+.resum { list-style: none; padding: 0; }
+.resum li { padding: .3rem 0; }
