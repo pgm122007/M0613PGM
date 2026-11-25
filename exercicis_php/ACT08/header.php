@@ -8,19 +8,14 @@
 </head>
 <body>
     <header>
-        <h1><?= NOM_BOTIGA ?></h1>
-        <nav>
-            <a href="index.php">Inici</a>
-            <a href="registre.php">Registre</a>
-            <a href="privat.php">Àrea privada</a>
-        </nav>
-        <p class="usuari">
-        <?php if (isset($_SESSION['usuari'])): ?>
-            Hola, <strong><?= htmlspecialchars($_SESSION['nom']) ?></strong>
-            &middot; <a href="sortir.php">Sortir</a>
-        <?php else: ?>
-            <a href="login.php">Iniciar sessió</a>
-        <?php endif; ?>
-        </p>
-    </header>
+        <header>
+    <p class="usuari">
+    <?php if (isset($_SESSION['usuari'])): ?>
+        Hola, <strong><?= htmlspecialchars($_SESSION['nom']) ?></strong>
+        &middot; <a href="sortir.php">Sortir</a>
+    <?php elseif (basename($_SERVER['SCRIPT_NAME']) !== 'login.php'): ?>
+        <a href="login.php">Iniciar sessio</a>
+    <?php endif; ?>
+    </p>
+</header>
     <main>
